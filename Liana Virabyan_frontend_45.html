@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="root">
+        <header>
+            <h1>Classrooms:Beta</h1>
+            <div class="tool_bar">
+                <input class="input_text" type="text">
+                <select name="Monday" id="weekdaysDropdown">
+                    <option value="mon">Monday</option>
+                    <option value="tue">Tusday</option>
+                    <option value="wed">Wednesday</option>
+                    <option value="thue">Thursday</option>
+                    <option value="fir">Friday</option>
+                    <option value="sat">Saturday</option>
+                    <option value="sun">Sunday</option>
+                </select>
+                  <select name="Time from" id="timeFromDropdown">
+                    <option value="1000">10</option>
+                    <option value="1100">11</option>
+                    <option value="1200">12</option>
+                    <option value="1300">13</option>
+                    <option value="1400">14</option>
+                    <option value="1500">10</option>
+                    <option value="1600">10</option>
+                    <option value="1700">10</option>
+                    <option value="1800">10</option>
+                    <option value="1900">10</option>
+                    <option value="2000">10</option>
+                  </select>
+                  <select name="Time to" id="timeToDropdown">
+                    <option value="1000">10</option>
+                    <option value="1100">11</option>
+                    <option value="1200">12</option>
+                    <option value="1300">13</option>
+                    <option value="1400">14</option>
+                    <option value="1500">10</option>
+                    <option value="1600">10</option>
+                    <option value="1700">10</option>
+                    <option value="1800">10</option>
+                    <option value="1900">10</option>
+                    <option value="2000">10</option>
+                  </select>
+                  <button class="btn btn-primary">Search</button>
+                  <button class="btn btn-success">See Availability</button>
+                  <button class="btn btn-secondary">Reset Filters</button>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <h3 class="content_title">Ada Loves</h3>
+                <table class="content_table">
+                    <thead>
+                        <tr class="bg-light-gray">
+                            <th>Time</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                          </tr>
+                    </thead>                   
+
+                    <tr >
+                        <td>10:00</td>
+                        <td>                           
+                             <div class="information-div">
+                            <span class="info-icon">CP1</span>
+                            <p class="tutor_name">Hayk Darbinyan</p></td>
+                            </div>         
+                        </td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>11:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>12:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>13:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>15:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>16:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>18:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>19:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>19:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>20:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>21:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>21:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>22:00</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>
+                    <tr>
+                        <td>22:30</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                    </tr>                    
+                </table>
+            </div>
+        </main>
+    </div>
+   <script src="Liana Virabyan_frontend_45.js"></script>
+</body>
+</html>
