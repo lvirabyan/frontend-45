@@ -12,8 +12,36 @@ body {
     width: 100vw;
     height: 100vh;
 }
+.new{
+    display: flex;
+    justify-content: right;    
+}
+.dօne {
+    display: flex;    
+    height: 25px;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 40px;
+    background-color:rgb(71, 102, 254);
+}
+.span-element{
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+}
+.text-element {
+    font-size: 14px;
+    color: white;
+    width: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color:  rgb(196, 196, 196);
+}
 .content {
     width: 50%;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
 }
 .flex {
     display: flex;
@@ -23,7 +51,6 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 10px;
     margin-top: 5px;
     border: 2px solid grey; 
     border-radius: 5px;
@@ -41,13 +68,14 @@ body {
 .btn {
     flex: 15%;
     background-color: rgb(252, 48, 48);
+    margin: 5px;
     border-radius: 5px;
     border-color:  rgb(196, 196, 196)
 }
 .btnEdit {
     flex: 15%;
     background-color: solid grey;
-    margin-right: 5px;
+    margin: 5px;
     border-radius: 5px;
     border-color:  rgb(196, 196, 196);
 }
@@ -55,7 +83,7 @@ body {
     width: 15%;
     margin: 5px;
     background-color: solid grey;
-    margin-right: 5px;
+    margin: 5px;
     border-radius: 5px;
     border-color:  rgb(196, 196, 196);
 }
@@ -64,4 +92,5 @@ body {
 }
 .checkbox {
     flex: 10%;    
+    margin: 5px ;
 }

@@ -18,9 +18,9 @@ export const data = [
     {
       id: "3",
       text: "Exercise",
-      checked: true,
+      checked: false,
       priority: 3,
-      done: true,
+      done: false,
       time: "30 minutes"
     }
   ];

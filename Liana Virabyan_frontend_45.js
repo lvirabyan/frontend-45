@@ -1,9 +1,8 @@
 import {data} from "./JS/data.js";
 import { removeElem } from "./JS/helpers/Remove.js";
 import {createNewItem} from "./JS/helpers/AddItem.js";
-import { create_Element, create_input } from "./JS/helpers/Create.js";
+import { create_Element, create_input , create_Dօne} from "./JS/helpers/Create.js";
 import { editItem,  } from "./JS/helpers/Methods.js";
-
 const root = document.querySelector(".content");
 
 function render () {
@@ -14,9 +13,15 @@ function render () {
  function addItem(value){
   data.push(createNewItem(value));
  }
- let create = function (f) {
 
+
+
+
+
+  let create = function (f) {
   create_Element("h2", root, "To do List");
+  create_Dօne(data, root); 
+
   let content = create_Element("div", root);
   
   for(let i = 0; i < data.length; i++){
@@ -34,12 +39,17 @@ function render () {
       addItem(input.value);
       render();
      });
-     console.log(data);
  };
+
 
   function create_list_item (innerText, content, className, id, checked){
   
   let div = create_Element("div", content, undefined, className);
+
+
+
+
+
   let inputCheckbox = create_Element("input", div, undefined, "checkbox");
   inputCheckbox.setAttribute("type", "checkbox");
   if(checked){
@@ -52,6 +62,7 @@ function render () {
         item.checked = !checked;
         };
       });
+      render();
     } else {
       inputCheckbox.setAttribute("checked", "checked");
       data.find((item) => { 
@@ -59,6 +70,7 @@ function render () {
         item.checked = !checked;
         }});
     }
+    render()
   });
   let text = create_Element("p", div, innerText, "text");
   text.textContent = innerText;
@@ -66,10 +78,43 @@ function render () {
     text.contentEditable = "true";
     text.focus();
   });
+
+function timerCounter(){
+let timer = create_Element("BUTTON", div,"Deadline", "btnEdit")
+div.appendChild(timer);
+let timerInput = create_input("date","2023, 6, 15", div)
+timer.addEventListener("click",()=>{
+if(timerInput.value){
+    let dataParts = timerInput.value.split("-");
+
+    let year = parseInt(dataParts[0]);
+    let month = parseInt(dataParts[1]) - 1; 
+    let day = parseInt(dataParts[2]);
+    
+    let deadline = new Date(year, month, day);
+    let now = new Date(); 
+    let milliseconds = deadline.getTime() - now.getTime();
+      milliseconds = 5000; 
+      if (milliseconds > 2) {
+        window.setTimeout(function() {
+          alert("You have 2 second", "text")
+        }, milliseconds);
+      }
+  } else {
+    alert("Please set the Deadline date")
+  }
+
+})
+}
+timerCounter()
+
+
+
+
   let editeButton = create_Element("BUTTON", div, "Edit", "btnEdit");
   editeButton.addEventListener("click", () => {
     const itemId = data.find(item => item.text === innerText).id;
-    editItem(itemId, text.textContent);
+    editItem(itemId, text.textContent, data);
   });
   let removeButton = create_Element("BUTTON", div, "Delete", "btn");
   removeButton.addEventListener("click", () => {
@@ -79,6 +124,7 @@ function render () {
       render();
     }
   });
+
 };
 
  create(create_list_item);
