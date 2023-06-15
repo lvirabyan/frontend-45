@@ -13,12 +13,7 @@ function render () {
  function addItem(value){
   data.push(createNewItem(value));
  }
-
-
-
-
-
-  let create = function (f) {
+let create = function (f) {
   create_Element("h2", root, "To do List");
   create_Dօne(data, root); 
 

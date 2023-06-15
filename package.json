@@ -1,0 +1,23 @@
+{
+  "name": "frontend_---day_2---copy-(2)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Liana Virabyan_frontend_45.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lvirabyan/frontend-45.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lvirabyan/frontend-45/issues"
+  },
+  "homepage": "https://github.com/lvirabyan/frontend-45#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
